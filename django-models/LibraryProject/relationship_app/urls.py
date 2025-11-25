@@ -13,3 +13,8 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('logout/', views.logout_view, name='logout'),
 ]
+
+# append to urlpatterns
+path('role/admin/', views.admin_view, name='admin_view'),
+path('role/librarian/', views.librarian_view, name='librarian_view'),
+path('role/member/', views.member_view, name='member_view'),
